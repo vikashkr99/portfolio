@@ -14,6 +14,12 @@ body {
     font-family: 'Quicksand', cursive;
 }
 
+h2 {
+    font-size: 1.7vw;
+}
+h3,li,h4,td {
+    font-size: 1.5vw;
+}
 .nav {
     width: 100%;
     height: 4vw;
@@ -49,13 +55,18 @@ body {
     margin: 0 2px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .nav .buttons a:hover {
     color: rgb(255, 80, 0);
     background: #444;
 }
 
 .section #about {
-    padding: 1vw;
+    padding: 2vw;
     width: 100%;
     background: rgba(10, 10, 10, 0.932);
     margin-top: 4vw;
@@ -72,7 +83,7 @@ body {
 }
 
 .section #about .pic img {
-    height: 60%;
+    height: 20vw;
     border-radius: 50%;
 }
 
@@ -99,7 +110,7 @@ body {
     flex-direction: column;
 }
 
-.section #education hr {
+hr {
     margin-bottom: 2vw;
 }
 
@@ -130,11 +141,42 @@ body {
 
 .section #certificates .certs {
     display: grid;
-    /* grid-template-rows: 1fr 1fr; */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .section #certificates .certs img {
     width: 90%;
     padding: 1vw;
+}
+
+.section #achievements {
+    color: white;
+    padding: 2vw 10vw;
+    width: 100%;
+    background-color: black;
+}
+
+.section #achievements .lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section #achievements .lists h3 {
+    margin-bottom: 1vw;
+}
+
+.section #contactme {
+    color: white;
+    padding: 2vw 10vw;
+    width: 100%;
+    background-color: #444;
+}
+
+.section #contactme table tr td {
+    padding: 1vw 1vw;
+}
+
+.section #contactme img {
+    width: 3vw;
 }
